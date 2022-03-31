@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FDBA867227F655DE00B851A3 /* CompositionalLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDBA867127F655DE00B851A3 /* CompositionalLayout.swift */; };
 		FDD865E527F562B9003E4862 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD865E427F562B9003E4862 /* AppDelegate.swift */; };
 		FDD865E727F562B9003E4862 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD865E627F562B9003E4862 /* SceneDelegate.swift */; };
 		FDD865E927F562B9003E4862 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD865E827F562B9003E4862 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FDBA867127F655DE00B851A3 /* CompositionalLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalLayout.swift; sourceTree = "<group>"; };
 		FDD865E127F562B9003E4862 /* CompositionalLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CompositionalLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDD865E427F562B9003E4862 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDD865E627F562B9003E4862 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				FDD865E427F562B9003E4862 /* AppDelegate.swift */,
 				FDD865E627F562B9003E4862 /* SceneDelegate.swift */,
 				FDD865E827F562B9003E4862 /* ViewController.swift */,
+				FDBA867127F655DE00B851A3 /* CompositionalLayout.swift */,
 				FDD865F827F569E5003E4862 /* MyCollectionViewCell.swift */,
 				FDD865EA27F562B9003E4862 /* Main.storyboard */,
 				FDD865ED27F562BB003E4862 /* Assets.xcassets */,
@@ -141,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDBA867227F655DE00B851A3 /* CompositionalLayout.swift in Sources */,
 				FDD865E927F562B9003E4862 /* ViewController.swift in Sources */,
 				FDD865E527F562B9003E4862 /* AppDelegate.swift in Sources */,
 				FDD865F927F569E5003E4862 /* MyCollectionViewCell.swift in Sources */,
