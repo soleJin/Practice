@@ -1,3 +1,3 @@
 # Practice
 
-- CollectionView Compositional Layout
+- Compositional Mosaic Layout
