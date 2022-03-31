@@ -1,3 +1,3 @@
 # Practice
 
-- Compositional Mosaic Layout
+- [Compositional Mosaic Layout](/CompositionalLayout/)
