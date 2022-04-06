@@ -2,5 +2,5 @@
 
 - [Compositional Mosaic Layout](/CompositionalLayout/)
 - [DiffableDataSource](/DiffableDataSource/)
-    - [MultipleSectionsInTableView](/DiffableDataSource/MultipleSectionsInTableView/)
+    - [MultipleSectionsInTableView(reordering items)](/DiffableDataSource/MultipleSectionsInTableView/)
 - [ModernCollectionViews](/ModernCollectionViews/)

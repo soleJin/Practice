@@ -40,46 +40,58 @@ class DataSource: UITableViewDiffableDataSource<Category, Item> {
     }
     
     override func tableView(_ tableView: UITableView, moveRowAt sourceIndexPath: IndexPath, to destinationIndexPath: IndexPath) {
-        // case1
+        
+        guard let sourceItem = itemIdentifier(for: sourceIndexPath) else { return }
+        
+        // CASE 1: attempting to move to self
         guard sourceIndexPath != destinationIndexPath else {
             print("move to self")
             return
         }
         
-        guard let sourceItem = itemIdentifier(for: sourceIndexPath) else {
-            print("sourceItem 찾지 못함")
-            return
-        }
-        
+        let destinationItem = itemIdentifier(for: destinationIndexPath)
+
         var snapshot = self.snapshot()
-        snapshot.deleteItems([sourceItem])
         
-        guard let destinationItem = itemIdentifier(for: destinationIndexPath) else {
-            // case4
+        // handle CASE 2 AND 3
+        if let destinationItem = destinationItem {
+            
+            // get the source index and the destination index
+            if let sourceIndex = snapshot.indexOfItem(sourceItem),
+               let destinationIndex = snapshot.indexOfItem(destinationItem) {
+                
+                // what order should we be inserting the source item
+                let isAfter = destinationIndex > sourceIndex
+                && snapshot.sectionIdentifier(containingItem: sourceItem) ==
+                snapshot.sectionIdentifier(containingItem: destinationItem)
+                
+                // first delete the source item from the snapshot
+                snapshot.deleteItems([sourceItem])
+                
+                // CASE 2
+                if isAfter {
+                    print("after destination")
+                    snapshot.insertItems([sourceItem], afterItem: destinationItem)
+                }
+                
+                // CASE 3
+                else {
+                    print("before destination")
+                    snapshot.insertItems([sourceItem], beforeItem: destinationItem)
+                }
+            }
+        }
+        
+        // handle CASE 4
+        // no index path at destination section
+        else {
+            print("new index path")
+            
             let destinationSection = snapshot.sectionIdentifiers[destinationIndexPath.section]
+            
+            snapshot.deleteItems([sourceItem])
             snapshot.appendItems([sourceItem], toSection: destinationSection)
-            apply(snapshot, animatingDifferences: true)
-            return
         }
-        
-        guard let sourceIndex = snapshot.indexOfItem(sourceItem),
-              let destinationIndex = snapshot.indexOfItem(destinationItem) else {
-            print("sourceIndex or destinationIndex를 찾지 못함")
-            return
-        }
-        
-        let isAfter = sourceIndex < destinationIndex &&
-        snapshot.sectionIdentifier(containingItem: sourceItem) == snapshot.sectionIdentifier(containingItem: destinationItem)
-        
-        // case2(after)
-        if isAfter {
-            snapshot.insertItems([sourceItem], afterItem: destinationItem)
-        }
-        
-        // case3(before)
-        if !isAfter {
-            snapshot.insertItems([sourceItem], beforeItem: destinationItem)
-        }
-        apply(snapshot, animatingDifferences: true)
+        apply(snapshot, animatingDifferences: false)
     }
 }
