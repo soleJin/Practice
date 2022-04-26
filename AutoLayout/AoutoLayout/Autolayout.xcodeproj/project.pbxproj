@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FD00A5FE2817D6CA006EA1DD /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD00A5FD2817D6CA006EA1DD /* CalculatorViewController.swift */; };
+		FD00A6002817DCD6006EA1DD /* DynamicFontViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD00A5FF2817DCD6006EA1DD /* DynamicFontViewController.swift */; };
 		FD34FAAF2815F4F2004741E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34FAAE2815F4F2004741E0 /* AppDelegate.swift */; };
 		FD34FAB12815F4F2004741E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34FAB02815F4F2004741E0 /* SceneDelegate.swift */; };
 		FD34FAB32815F4F2004741E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34FAB22815F4F2004741E0 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		FD00A5FD2817D6CA006EA1DD /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		FD00A5FF2817DCD6006EA1DD /* DynamicFontViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicFontViewController.swift; sourceTree = "<group>"; };
 		FD34FAAB2815F4F2004741E0 /* Autolayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autolayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD34FAAE2815F4F2004741E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD34FAB02815F4F2004741E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +64,7 @@
 				FD34FAB02815F4F2004741E0 /* SceneDelegate.swift */,
 				FD34FAB22815F4F2004741E0 /* ViewController.swift */,
 				FD00A5FD2817D6CA006EA1DD /* CalculatorViewController.swift */,
+				FD00A5FF2817DCD6006EA1DD /* DynamicFontViewController.swift */,
 				FD34FAB42815F4F2004741E0 /* Main.storyboard */,
 				FD34FAB72815F4F5004741E0 /* Assets.xcassets */,
 				FD34FAB92815F4F5004741E0 /* LaunchScreen.storyboard */,
@@ -143,6 +146,7 @@
 			files = (
 				FD34FAB32815F4F2004741E0 /* ViewController.swift in Sources */,
 				FD34FAAF2815F4F2004741E0 /* AppDelegate.swift in Sources */,
+				FD00A6002817DCD6006EA1DD /* DynamicFontViewController.swift in Sources */,
 				FD00A5FE2817D6CA006EA1DD /* CalculatorViewController.swift in Sources */,
 				FD34FAB12815F4F2004741E0 /* SceneDelegate.swift in Sources */,
 			);
