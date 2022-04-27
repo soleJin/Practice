@@ -14,13 +14,15 @@
 		FD34FAB12815F4F2004741E0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34FAB02815F4F2004741E0 /* SceneDelegate.swift */; };
 		FD34FAB32815F4F2004741E0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD34FAB22815F4F2004741E0 /* ViewController.swift */; };
 		FD34FAB62815F4F2004741E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD34FAB42815F4F2004741E0 /* Main.storyboard */; };
-		FD34FAB82815F4F5004741E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD34FAB72815F4F5004741E0 /* Assets.xcassets */; };
 		FD34FABB2815F4F5004741E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD34FAB92815F4F5004741E0 /* LaunchScreen.storyboard */; };
 		FDA58EE72818A03100DC3B18 /* CustomKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA58EE62818A03100DC3B18 /* CustomKeyboardView.swift */; };
 		FDA58EE92818A04F00DC3B18 /* CustomKeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FDA58EE82818A04F00DC3B18 /* CustomKeyboardView.xib */; };
 		FDA58EEB2818B4E900DC3B18 /* ExpendCellViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA58EEA2818B4E900DC3B18 /* ExpendCellViewController.swift */; };
 		FDA58EED2818B93800DC3B18 /* ExpendCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA58EEC2818B93800DC3B18 /* ExpendCell.swift */; };
 		FDA58EEF2818C05700DC3B18 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA58EEE2818C05700DC3B18 /* User.swift */; };
+		FDA58EF5281909F500DC3B18 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDA58EF4281909F500DC3B18 /* Assets.xcassets */; };
+		FDA58EF92819405900DC3B18 /* DefaultButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA58EF82819405900DC3B18 /* DefaultButtonViewController.swift */; };
+		FDA58EFB2819406400DC3B18 /* FloatingButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDA58EFA2819406400DC3B18 /* FloatingButtonsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +34,6 @@
 		FD34FAB02815F4F2004741E0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FD34FAB22815F4F2004741E0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FD34FAB52815F4F2004741E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FD34FAB72815F4F5004741E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD34FABA2815F4F5004741E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD34FABC2815F4F5004741E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDA58EE62818A03100DC3B18 /* CustomKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboardView.swift; sourceTree = "<group>"; };
@@ -40,6 +41,9 @@
 		FDA58EEA2818B4E900DC3B18 /* ExpendCellViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpendCellViewController.swift; sourceTree = "<group>"; };
 		FDA58EEC2818B93800DC3B18 /* ExpendCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpendCell.swift; sourceTree = "<group>"; };
 		FDA58EEE2818C05700DC3B18 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FDA58EF4281909F500DC3B18 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
+		FDA58EF82819405900DC3B18 /* DefaultButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultButtonViewController.swift; sourceTree = "<group>"; };
+		FDA58EFA2819406400DC3B18 /* FloatingButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloatingButtonsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,11 +86,13 @@
 				FDA58EEA2818B4E900DC3B18 /* ExpendCellViewController.swift */,
 				FDA58EEE2818C05700DC3B18 /* User.swift */,
 				FDA58EEC2818B93800DC3B18 /* ExpendCell.swift */,
+				FDA58EF82819405900DC3B18 /* DefaultButtonViewController.swift */,
+				FDA58EFA2819406400DC3B18 /* FloatingButtonsViewController.swift */,
 				FDA58EE82818A04F00DC3B18 /* CustomKeyboardView.xib */,
 				FD34FAB42815F4F2004741E0 /* Main.storyboard */,
-				FD34FAB72815F4F5004741E0 /* Assets.xcassets */,
 				FD34FAB92815F4F5004741E0 /* LaunchScreen.storyboard */,
 				FD34FABC2815F4F5004741E0 /* Info.plist */,
+				FDA58EF4281909F500DC3B18 /* Assets.xcassets */,
 			);
 			path = Autolayout;
 			sourceTree = "<group>";
@@ -150,9 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD34FABB2815F4F5004741E0 /* LaunchScreen.storyboard in Resources */,
-				FD34FAB82815F4F5004741E0 /* Assets.xcassets in Resources */,
 				FDA58EE92818A04F00DC3B18 /* CustomKeyboardView.xib in Resources */,
 				FD34FAB62815F4F2004741E0 /* Main.storyboard in Resources */,
+				FDA58EF5281909F500DC3B18 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -163,12 +169,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDA58EFB2819406400DC3B18 /* FloatingButtonsViewController.swift in Sources */,
 				FD00A60428183FB3006EA1DD /* CustomKeyboardViewController.swift in Sources */,
 				FD34FAB32815F4F2004741E0 /* ViewController.swift in Sources */,
 				FD34FAAF2815F4F2004741E0 /* AppDelegate.swift in Sources */,
 				FD00A6002817DCD6006EA1DD /* DynamicFontViewController.swift in Sources */,
 				FDA58EEB2818B4E900DC3B18 /* ExpendCellViewController.swift in Sources */,
 				FD00A5FE2817D6CA006EA1DD /* CalculatorViewController.swift in Sources */,
+				FDA58EF92819405900DC3B18 /* DefaultButtonViewController.swift in Sources */,
 				FDA58EE72818A03100DC3B18 /* CustomKeyboardView.swift in Sources */,
 				FD34FAB12815F4F2004741E0 /* SceneDelegate.swift in Sources */,
 				FDA58EEF2818C05700DC3B18 /* User.swift in Sources */,
