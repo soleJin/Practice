@@ -8,5 +8,6 @@
 import Foundation
 
 struct User: Hashable {
-    let name: String 
+    let name: String
+    var isExpand: Bool = false
 }

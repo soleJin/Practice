@@ -41,18 +41,21 @@ extension UserViewController {
     private func addNewUser(with name: String) {
         let user = User(name: name)
         users.append(user)
-        createSnapshot(from: users)
+        createSnapshot()
     }
     
     private func configureDataSource() {
         dataSource = UserDataSource(tableView: tableView, cellProvider: { tableView, indexPath, user in
             let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             cell.textLabel?.text = user.name
+            if user.isExpand {
+                cell.textLabel?.textColor = .red
+            }
             return cell
         })
     }
     
-    private func createSnapshot(from users: [User]) {
+    private func createSnapshot() {
         var snapshot = UsersSnapshot()
 
         snapshot.appendSections([.main])
@@ -64,7 +67,7 @@ extension UserViewController {
 
 extension UserViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let user = dataSource.itemIdentifier(for: indexPath) else { return }
-        print(user)
+        guard var user = dataSource.itemIdentifier(for: indexPath) else { return }
+        print(user)        
     }
 }
